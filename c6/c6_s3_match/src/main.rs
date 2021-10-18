@@ -44,7 +44,7 @@ fn main() {
 
 fn add_to_some(op: Option<i32>) -> Option<i32> {
     match op {
-        None => None,
+        None => None, // if None isn't processed, this code won't compile
         Some(i) => Some(i + 1),
     }
 }
